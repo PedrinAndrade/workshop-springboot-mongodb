@@ -15,7 +15,7 @@ import com.pedroandrade.workshopmongo.services.exception.ObjectNotFoundException
 public class UserService {
 
 	@Autowired
-	UserRepository repo;
+	private UserRepository repo;
 	
 	public List<User> findAll(){
 		return repo.findAll();
